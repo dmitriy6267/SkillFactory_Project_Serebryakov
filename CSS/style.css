@@ -42,6 +42,10 @@ a {
   line-height: 28px;
 }
 
+.desknone {
+	display: none;
+}
+
 /* HEADER */
 
 
@@ -289,10 +293,12 @@ a {
 
 
 .control {
-  margin-top: -318px;
+	width: 817px;
+  margin: -318px auto 62px;
 }
 
 .control-container {
+	margin: auto 18px;
   text-align: center;
 }
 
@@ -313,20 +319,9 @@ a {
   margin-bottom: 35px;
 }
 
-.video {
-  display: none;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ),
-  url(../Images/control.png);
-  background-size: cover;
-  width: 817px;
-  height: 434px;
-  margin: 0 auto 62px;
-}
-
 .video-mobile {
   width: 100%;
+	margin-bottom: 28px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -336,14 +331,13 @@ a {
 
 .control__img {
   width: 100%;
-  margin:auto 18px;
 }
 
 
 .button-play {
   width: 100%;
   margin: auto 18px;
-  height: 434px;
+  height: 100%;
   padding: 0;
   display: flex;
   justify-content: center;
@@ -741,6 +735,10 @@ label {
   text-align: center;
 }
 
+.clients__header {
+	margin-bottom: 15px;
+}
+
 .clients__percent {
   width: 476px;
   margin: 24px auto 39px;
@@ -907,6 +905,7 @@ label {
 }
 
 .adress__map {
+	width: 883px;
   margin-bottom: 40px;
 }
 
@@ -927,6 +926,10 @@ label {
   body {
     background-color: #131313;
   }
+
+	.desknone {
+		display: block;
+	}
 
   .navi {
     display: none;
@@ -967,15 +970,23 @@ label {
     display: none;
   }
 
+	.completed-container {
+		padding-bottom: 58px;
+	}
+
+	.completed__content {
+		max-width: 100%;
+	}
+
   .completed__mobile {
     width: 100%;
     margin: auto 18px;
     text-align: center;
   }
 
-  .completed__img--desknone {
-    display: block;
-  }
+	.completed__img--desknone {
+	  display: block;
+	}
 
   .about {
     width: 100%;
@@ -997,9 +1008,9 @@ label {
     margin-top: 36px;
   }
 
-  .control-container {
+  .control {
     width: 100%;
-    margin: auto 18px;
+    margin: auto;
   }
 
   .control__text {
@@ -1095,5 +1106,9 @@ label {
     margin: auto 18px;
     background-image: none;
   }
+
+	.adress__map {
+		width: 100%;
+	}
 
 }
