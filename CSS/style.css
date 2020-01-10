@@ -55,7 +55,7 @@ button {
 }
 
 .header-container {
-  /*max-width: 1256px;*/
+  max-width: 1256px;
   height: 83px;
   margin: auto;
   display: flex;
@@ -961,16 +961,20 @@ label {
     justify-content: space-between;
   }
 
+	.intro {
+		height: auto;
+	}
+
   .intro-container {
     width: 100%;
     max-width: 100%;
-    margin: auto 18px;
+    margin: 85px 18px 61px;
     text-align: center;
   }
 
 	.intro__title {
 		font-size: 23px;
-		line-height: 123.83%;
+		line-height: 31px;
 	}
 
 	.intro__subtitle {
@@ -993,6 +997,7 @@ label {
   }
 
 	.completed-container {
+		padding-top: 36px;
 		padding-bottom: 58px;
 	}
 
@@ -1008,12 +1013,7 @@ label {
 
 	.about__header {
 		font-size: 22px;
-		line-height: 138.6%;
-	}
-
-	.about_text {
-		font-size: 11px;
-		line-height: 158.48%;
+		line-height: 30px;
 	}
 
 	.completed__img--desknone {
@@ -1030,6 +1030,8 @@ label {
   .about_text {
     width: 100%;
     margin: 0 32px 36px;
+		font-size: 11px;
+		line-height: 17px;
   }
 
   .img {
@@ -1040,15 +1042,10 @@ label {
     margin-top: 36px;
   }
 
-	.about__header {
-		font-size: 14px;
-		line-height: 138.6%;
+	.details_text {
+		font-size: 11px;
+		line-height: 135.84%;
 	}
-
-.details_text {
-	font-size: 11px;
-	line-height: 135.84%;
-}
 
   .control {
     width: 100%;
@@ -1062,9 +1059,11 @@ label {
 
   .control__text {
     width: 100%;
+		height: auto;
+		margin-bottom: 61px;
     color: #FFF;
 		font-size: 11px;
-		line-height: 169.8%;
+		line-height: 19px;
   }
 
   .submit__mobile {
@@ -1120,7 +1119,7 @@ label {
 
 	.types__header {
 		font-size: 22px;
-		line-height: 138.6%;
+		line-height: 30px;
 	}
 
 	.types__subheader {
@@ -1158,9 +1157,9 @@ label {
   }
 
   .fantasy__header--mobile {
-    margin: 24px auto;
+    margin: 40px auto 24px;
 		font-size: 22px;
-		line-height: 138.6%;
+		line-height: 30px;
   }
 
   .questions__header {
