@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans|Yeseva+One&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="home">
       <div class="header-container">
         <div class="logo font-orange">
           <a href="#" class=" link font-orange">IC "REPAIR DESIGN PROJECT"</a>
@@ -16,22 +16,19 @@
         <nav>
           <ul class="navi">
             <li class="navi__list">
-              <a href="#" class="navi__link">HOME</a>
+              <a href="#home" class="navi__link">HOME</a>
             </li>
             <li class="navi__list">
-              <a href="#" class="navi__link">PROJECTS</a>
+              <a href="#projects" class="navi__link">PROJECTS</a>
             </li>
             <li class="navi__list">
-              <a href="#" class="navi__link">MEASUREMENT</a>
+              <a href="#measure" class="navi__link">MEASUREMENT</a>
             </li>
             <li class="navi__list">
-              <a href="#" class="navi__link">TEAM</a>
+              <a href="#reviews" class="navi__link">REVIEWS</a>
             </li>
             <li class="navi__list">
-              <a href="#" class="navi__link">REVIEWS</a>
-            </li>
-            <li class="navi__list">
-              <a href="#" class="navi__link">CONTACTS</a>
+              <a href="#adress" class="navi__link">CONTACTS</a>
             </li>
           </ul>
         </nav>
@@ -64,7 +61,7 @@
           </div>
         </div>
       </div>
-      <div class="completed">
+      <div class="completed" id="projects">
         <div class="completed-container">
           <div class="completed__content">
             <div class="completed__mobile">
@@ -82,8 +79,8 @@
                 <div class="completed__img completed__img--desknone">
                   <img src="./Images/image2.png" alt="done_project" class="img">
                   <div class="mobile_arrows">
-                    <img src="./Images/left.png" alt="left">
-                    <img src="./Images/right.png" alt="right">
+                    <img src="./Images/left.svg" alt="left">
+                    <img src="./Images/right.svg" alt="right">
                   </div>
                 </div>
                 <div class="about__details">
@@ -136,14 +133,16 @@
         <div class="control-container">
           <div class="control__logo">
             <h2 class="font-header control__header">ONLINE CONTROL</h2>
-            <img src="./Images/line.png" alt="line" class="control__line">
-            <img src="./Images/camera.png" alt="camera" class="control__cam">
-            <img src="./Images/line.png" alt="line" class="control__line">
+            <div class="icon__wrapper">
+              <div class="line"></div>
+              <img src="./Images/camera.svg" alt="camera" class="icon">
+              <div class="line"></div>
+            </div>
           </div>
           <div class="video-mobile">
             <img src="./Images/control.png" alt="video" class="control__img">
             <button type="button" name="button" class="button-play">
-              <img src="./Images/play.png" alt="Play" class="button-play__img">
+              <img src="./Images/play.svg" alt="Play" class="button-play__img">
             </button>
           </div>
           <img src="./Images/line.png" alt="line" class="control__line--end">
@@ -199,7 +198,11 @@
         <div class="types-container">
           <div class="types__logo">
             <h2 class="font-header types__header">TYPES OF REPAIR</h2>
-            <img src="./Images/hummer.png" alt="hummer">
+            <div class="icon__wrapper">
+              <div class="line"></div>
+              <img src="./Images/hummer.svg" alt="hummer" class="icon">
+              <div class="line"></div>
+            </div>
           </div>
           <div class="types__wrapper">
             <div class="types__exmpl">
@@ -254,7 +257,7 @@
           </div>
         </div>
       </div>
-      <div class="measure mobile__none">
+      <div class="measure mobile__none" id="measure">
         <div class="measure-container">
           <div class="steps">
             <div class="steps__content">
@@ -320,7 +323,7 @@
             </div>
             <div class="piggy">
               <div class="piggy__img">
-                <img src="./Images/piggy.png" alt="save_your_money">
+                <img src="./Images/piggy.svg" alt="save_your_money">
               </div>
               <p class="piggy_text">Help save 10 - 20% of the cost of materials</p>
             </div>
@@ -391,13 +394,17 @@
           </div>
         </div>
       </div>
-      <div class="clients mobile__none">
+      <div class="clients mobile__none" id="reviews">
         <div class="clients-container">
           <div class="clients__logo">
             <h2 class="font-header clients__header">
               OUR CLIENTS
             </h2>
-            <img src="./Images/handshake.png" alt="handshake">
+            <div class="icon__wrapper">
+              <div class="line"></div>
+              <img src="./Images/handshake.svg" alt="gandshake" class="icon">
+              <div class="line"></div>
+            </div>
             <div class="clients__percent">
               80% of our customers recommend us to their friends and family.
             </div>
@@ -426,11 +433,11 @@
               </div>
               <div class="clients__details">
                 <div class="clients__details-sqr">
-                  <img src="./Images/clients_detail_sqr.png" alt="square" class="clients__details-img">
+                  <img src="./Images/sqr.svg" alt="square" class="clients__details-img">
                   <p class="clients__details-num">40 M2</p>
                 </div>
                 <div class="clients__details-days">
-                  <img src="./Images/clients_detail_days.png" alt="days" class="clients__details-img">
+                  <img src="./Images/days.svg" alt="days" class="clients__details-img">
                   <p class="clients__details-num">48 DAYS</p>
                 </div>
               </div>
@@ -458,11 +465,11 @@
                 </div>
                 <div class="clients__details clients__margin">
                   <div class="clients__details-sqr">
-                    <img src="./Images/clients_detail_sqr.png" alt="square" class="clients__details-img">
+                    <img src="./Images/sqr.svg" alt="square" class="clients__details-img">
                     <p class="clients__details-num">90 M2</p>
                   </div>
                   <div class="clients__details-days">
-                    <img src="./Images/clients_detail_days.png" alt="days" class="clients__details-img">
+                    <img src="./Images/days.svg" alt="days" class="clients__details-img">
                     <p class="clients__details-num">128 DAYS</p>
                   </div>
                 </div>
@@ -491,11 +498,11 @@
                 </div>
                 <div class="clients__details">
                   <div class="clients__details-sqr">
-                    <img src="./Images/clients_detail_sqr.png" alt="square" class="clients__details-img">
+                    <img src="./Images/sqr.svg" alt="square" class="clients__details-img">
                     <p class="clients__details-num">56 M2</p>
                   </div>
                   <div class="clients__details-days">
-                    <img src="./Images/clients_detail_days.png" alt="days" class="clients__details-img">
+                    <img src="./Images/days.svg" alt="days" class="clients__details-img">
                     <p class="clients__details-num">86 DAYS</p>
                   </div>
                 </div>
@@ -558,16 +565,16 @@
           </div>
         </div>
       </div>
-      <div class="adress">
+      <div class="adress" id="adress">
         <h2 class="adress__header font-header mobile__none">
           ROSTOV-ON-DON, NANSEN ST., 239 SHOPPING CENTER DECORUM TEL +7 (928) 768 32 29
         </h2>
         <div class="adress__links mobile__none">
           <a href="#">
-            <img src="./Images/email.png" alt="email" class="adress__email">
+            <img src="./Images/mail.svg" alt="email" class="adress__email">
           </a>
           <a href="#">
-            <img src="./Images/instagramm.png" alt="instagramm">
+            <img src="./Images/instagramm.svg" alt="instagramm">
           </a>
         </div>
         <div class="adress__map">
@@ -594,22 +601,19 @@
         <nav>
           <ul class="navi">
             <li class="navi__list">
-              <a href="#" class="navi__link">HOME</a>
+              <a href="#home" class="navi__link">HOME</a>
             </li>
             <li class="navi__list">
-              <a href="pages/projects.html" class="navi__link">PROJECTS</a>
+              <a href="#project" class="navi__link">PROJECTS</a>
             </li>
             <li class="navi__list">
-              <a href="#" class="navi__link">MEASUREMENT</a>
+              <a href="#measure" class="navi__link">MEASUREMENT</a>
             </li>
             <li class="navi__list">
-              <a href="#" class="navi__link">TEAM</a>
+              <a href="#reviews" class="navi__link">REVIEWS</a>
             </li>
             <li class="navi__list">
-              <a href="#" class="navi__link">REVIEWS</a>
-            </li>
-            <li class="navi__list">
-              <a href="#" class="navi__link">CONTACTS</a>
+              <a href="#adress" class="navi__link">CONTACTS</a>
             </li>
           </ul>
         </nav>

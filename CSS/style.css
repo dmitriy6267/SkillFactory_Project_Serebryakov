@@ -273,7 +273,7 @@ button {
   width: 42px;
   height: 13px;
   background: rgba(0,0,0,0);
-  background-image: url(../Images/arrowLeft.png);
+  background-image: url(../Images/arrow_left.svg);
   background-size: cover;
   border: none;
 }
@@ -283,7 +283,7 @@ button {
   width: 42px;
   height: 13px;
   background: rgba(0,0,0,0);
-  background-image: url(../Images/arrowRight.png);
+  background-image: url(../Images/arrow_right.svg);
   background-size: cover;
   border: none;
 }
@@ -295,12 +295,12 @@ button {
 
 .arrows__dot--active {
   background-size: cover;
-  background-image: url(../Images/dot1.png);
+  background-image: url(../Images/dot1.svg);
 }
 
 .arrows__dot--unactive {
   background-size: cover;
-  background-image: url(../Images/dot.png);
+  background-image: url(../Images/dot.svg);
 }
 
 
@@ -323,12 +323,19 @@ button {
   margin-bottom: 30px;
 }
 
-.control__cam {
+.icon__wrapper {
+	display: flex;
+	justify-content: center;
+}
+
+.icon {
   margin: 0px 7px;
 }
 
-.control__line {
-  padding-bottom: 12px;
+.line {
+	width: 32px;
+  margin-bottom: 12px;
+	border-bottom: 1.5px solid #E3B873;
 }
 
 .control__line--end {
@@ -646,7 +653,6 @@ label {
   align-items: center;
   width: 72px;
   height: 72px;
-  background-color: #E3B873;
   border-radius: 50%;
 }
 
@@ -698,6 +704,11 @@ label {
   font-size: 20px;
   line-height: 38px;
   list-style-type: none;
+}
+
+.fantasy__link {
+	display: inline-block;
+	border-bottom: 1px solid transparent;
 }
 
 .fantasy__link:hover {
