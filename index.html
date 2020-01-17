@@ -77,10 +77,10 @@
                   we have made happy more than 1000 families
                 </p>
                 <div class="completed__img completed__img--desknone">
-                  <img src="./Images/image2.png" alt="done_project" class="img">
+                  <img src="./Images/image1.png" alt="done_project" class="img" id="m_img">
                   <div class="mobile_arrows">
-                    <img src="./Images/left.svg" alt="left">
-                    <img src="./Images/right.svg" alt="right">
+                    <button type="button" class="button_left" id="m_button_left"></button>
+                    <button type="button" class="button_right" id="m_button_right"></button>
                   </div>
                 </div>
                 <div class="about__details">
@@ -107,23 +107,23 @@
                     </div>
                   </div>
                   <div class="arrows mobile__none">
-                    <button type="button" class="arrows__left"></button>
-                    <div class="arrows__dot arrows__dot--active"></div>
-                    <div class="arrows__dot arrows__dot--unactive"></div>
-                    <div class="arrows__dot arrows__dot--unactive"></div>
-                    <button type="button" class="arrows__right"></button>
+                    <button type="button" class="arrows__left button_left" id="button_left"></button>
+                    <div class="arrows__dot arrows__dot--active" id="dot1" onclick="showFirst()"></div>
+                    <div class="arrows__dot arrows__dot--unactive" id="dot2" onclick="showSecond()"></div>
+                    <div class="arrows__dot arrows__dot--unactive" id="dot3" onclick="showThird()"></div>
+                    <button type="button" class="arrows__right button_right" id="button_right"></button>
                   </div>
                 </div>
               </div>
             </div>
               <div class="mobile__none">
                 <div class="navigation">
-                  <a href="#" class="navigation__link">ROSTOV-ON-DON ADMIRAL</a>
-                  <a href="#" class="navigation__link">SOCHI THIEVES</a>
-                  <a href="#" class="navigation__link">ROSTOV-ON-DON PATRIOTIC</a>
+                  <a href="javascript:showFirst()" class="navigation__link" id="first_link">ROSTOV-ON-DON ADMIRAL</a>
+                  <a href="javascript:showSecond()" class="navigation__link" id="second_link">SOCHI THIEVES</a>
+                  <a href="javascript:showThird()" class="navigation__link" id="third_link">ROSTOV-ON-DON PATRIOTIC</a>
                 </div>
                 <div class="completed__img">
-                  <img src="./Images/image2.png" alt="done_project" class="img">
+                  <img src="./Images/image1.png" alt="done_project" class="img" id="img">
                 </div>
             </div>
           </div>
@@ -145,7 +145,7 @@
               <img src="./Images/play.svg" alt="Play" class="button-play__img">
             </button>
           </div>
-          <img src="./Images/line.png" alt="line" class="control__line--end">
+          <div class="control__line"></div>
           <div class="control__text">
             At each facility, a camera is installed that
             broadcasts the progress of work on the clock.
@@ -389,8 +389,8 @@
         <div class="completed__img completed__img--desknone">
           <img src="./Images/fantasy_backgr.jpg" alt="project" class="img">
           <div class="mobile_arrows">
-            <img src="./Images/left.png" alt="left">
-            <img src="./Images/right.png" alt="right">
+            <img src="./Images/left.svg" alt="left">
+            <img src="./Images/right.svg" alt="right">
           </div>
         </div>
       </div>
@@ -585,10 +585,10 @@
         </h2>
         <div class="adress__links desknone">
           <a href="#">
-            <img src="./Images/email.png" alt="email" class="adress__email">
+            <img src="./Images/mail.svg" alt="email" class="adress__email">
           </a>
           <a href="#">
-            <img src="./Images/instagramm.png" alt="instagramm">
+            <img src="./Images/instagramm.svg" alt="instagramm">
           </a>
         </div>
       </div>
@@ -625,5 +625,6 @@
         </div>
       </div>
     </footer>
+    <script src="index.js"></script>
   </body>
 </html>

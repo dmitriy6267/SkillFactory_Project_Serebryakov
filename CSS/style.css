@@ -291,6 +291,7 @@ button {
 .arrows__dot {
   width: 10px;
   height: 10px;
+	cursor: pointer;
 }
 
 .arrows__dot--active {
@@ -373,6 +374,12 @@ button {
 
 .button-play__img {
   margin-top: -26px;
+}
+
+.control__line {
+	margin: 62px auto 35px;
+	width: 55px;
+	border-bottom: 1.5px solid #E3B873;
 }
 
 .control__text {
@@ -1021,6 +1028,22 @@ label {
     margin: auto 18px;
     text-align: center;
   }
+
+	.button_left {
+		width: 36px;
+		height: 36px;
+		background-image: url(../Images/left.svg);
+		border: none;
+		border-radius: 50%;
+	}
+
+	.button_right {
+		width: 36px;
+		height: 36px;
+		background-image: url(../Images/right.svg);
+		border:none;
+		border-radius: 50%;
+	}
 
 	.about__header {
 		font-size: 22px;
