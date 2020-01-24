@@ -193,7 +193,7 @@ button {
   justify-content: space-between;
 }
 
-.navigation__link {
+.navigation__link--unactive {
   text-decoration: none;
   margin-right: 5%;
   font-family: 'Yeseva One', serif;
@@ -203,6 +203,16 @@ button {
 }
 
 .navigation__link:hover {
+	color: #E3B873;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #E3B873;
+}
+
+.navigation__link--active {
+	margin-right: 5%;
+  font-family: 'Yeseva One', serif;
+  font-size: 14px;
+  line-height: 19px;
 	color: #E3B873;
   padding-bottom: 5px;
   border-bottom: 1px solid #E3B873;
