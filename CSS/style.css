@@ -193,7 +193,7 @@ button {
   justify-content: space-between;
 }
 
-.navigation__link--unactive {
+.navigation__link {
   text-decoration: none;
   margin-right: 5%;
   font-family: 'Yeseva One', serif;
@@ -208,7 +208,7 @@ button {
   border-bottom: 1px solid #E3B873;
 }
 
-.navigation__link--active {
+.link__active {
 	margin-right: 5%;
   font-family: 'Yeseva One', serif;
   font-size: 14px;
@@ -302,16 +302,13 @@ button {
   width: 10px;
   height: 10px;
 	cursor: pointer;
+	background-size: cover;
+  background-image: url(../Images/dot.svg);
 }
 
-.arrows__dot--active {
+.dot__active {
   background-size: cover;
   background-image: url(../Images/dot1.svg);
-}
-
-.arrows__dot--unactive {
-  background-size: cover;
-  background-image: url(../Images/dot.svg);
 }
 
 

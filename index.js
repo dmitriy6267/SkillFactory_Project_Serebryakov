@@ -1,117 +1,73 @@
+
 const image = document.getElementById('img');
-const btnLeft = document.getElementById('button_left');
-const btnRight = document.getElementById('button_right');
+const link = document.querySelectorAll('.navigation__link');
+const dot = document.querySelectorAll('.arrows__dot');
+const text = document.querySelectorAll('.details__text');
 
-const dots = [
-  document.getElementById('dot1'),
-  document.getElementById('dot2'),
-  document.getElementById('dot3')
+const data = [
+  {
+    img: './Images/image1.png',
+    city: 'Rostov-on-Don<br>LCD admiral',
+    area: '81.5 m2<br>&nbsp',
+    time: '3.5 months'
+  },
+  {
+    img: './Images/image2.png',
+    city: 'Sochi<br>Thieves',
+    area: '105 m2<br>&nbsp',
+    time: '4 month'
+  },
+  {
+    img: './Images/image3.png',
+    city: 'Rostov-on-Don<br>Patriotic',
+    area: '93 m2<br>&nbsp',
+    time: '3 month'
+  }
 ];
-const links = [
-  document.getElementById('first_link'),
-  document.getElementById('second_link'),
-  document.getElementById('third_link')
-];
 
-const details = [
-  document.getElementById('completed__city'),
-  document.getElementById('completed__area'),
-  document.getElementById('completed__time'),
-];
+let slideNumber = 0;
 
-let slideNumber = 1;
+function isActive (index) {
+  return  (dot[index].classList.contains('dot__active'));
+};
 
-function showFirst() {
-  image.src = './Images/image1.png';
+function changeActiveLink (index) {
+  for (let i=0; i<3; i++) {
+    if  (!isActive(i) && i === index) {
+      dot[index].classList.toggle('dot__active');
+      link[index].classList.toggle('link__active');
+    } else {
+      dot[i].classList.remove('dot__active');
+      link[i].classList.remove('link__active');
+    };
+  };
+};
 
-  dots[0].classList.remove('arrows__dot--unactive')
-  dots[0].classList.add('arrows__dot--active');
-  dots[1].classList.remove('arrows__dot--active')
-  dots[1].classList.add('arrows__dot--unactive');
-  dots[2].classList.remove('arrows__dot--active')
-  dots[2].classList.add('arrows__dot--unactive');
-
-  links[0].classList.remove('navigation__link--unactive');
-  links[0].classList.add('navigation__link--active');
-  links[1].classList.remove('navigation__link--active');
-  links[1].classList.add('navigation__link--unactive');
-  links[2].classList.remove('navigation__link--active');
-  links[2].classList.add('navigation__link--unactive');
-
-  details[0].innerHTML = 'Rostov-on-Don<br>LCD admiral';
-  details[1].innerHTML = '81 m2';
-  details[2].innerHTML = '3.5 months';
-
-  slideNumber = 1;
-}
-
-function showSecond() {
-  image.src = './Images/image2.png';
-
-  dots[0].classList.remove('arrows__dot--active')
-  dots[0].classList.add('arrows__dot--unactive');
-  dots[1].classList.remove('arrows__dot--unactive')
-  dots[1].classList.add('arrows__dot--active');
-  dots[2].classList.remove('arrows__dot--active')
-  dots[2].classList.add('arrows__dot--unactive');
-
-  links[0].classList.remove('navigation__link--active');
-  links[0].classList.add('navigation__link--unactive');
-  links[1].classList.remove('navigation__link--unactive');
-  links[1].classList.add('navigation__link--active');
-  links[2].classList.remove('navigation__link--active');
-  links[2].classList.add('navigation__link--unactive');
-
-  details[0].innerHTML = 'Sochi<br>Thieves';
-  details[1].innerHTML = '105 m2';
-  details[2].innerHTML = '4 months';
-
-  slideNumber = 2;
-}
-
-function showThird() {
-  image.src = './Images/image3.png';
-
-  dots[0].classList.remove('arrows__dot--active')
-  dots[0].classList.add('arrows__dot--unactive');
-  dots[1].classList.remove('arrows__dot--active')
-  dots[1].classList.add('arrows__dot--unactive');
-  dots[2].classList.remove('arrows__dot--unactive')
-  dots[2].classList.add('arrows__dot--active');
-
-  links[0].classList.remove('navigation__link--active');
-  links[0].classList.add('navigation__link--unactive');
-  links[1].classList.remove('navigation__link--active');
-  links[1].classList.add('navigation__link--unactive');
-  links[2].classList.remove('navigation__link--unactive');
-  links[2].classList.add('navigation__link--active');
-
-  details[0].innerHTML = 'Rostov-on-Don<br>Patriotic';
-  details[1].innerHTML = '93 m2';
-  details[2].innerHTML = '3 months';
-
-  slideNumber = 3;
-}
+function showSlide(index) {
+  image.src = data[index].img;
+  text[0].innerHTML = data[index].city;
+  text[1].innerHTML = data[index].time;
+  text[2].innerHTML = data[index].area;
+  changeActiveLink(index);
+  slideNumber = index;
+};
 
 function slideLeft() {
-  if (slideNumber === 1) {
-    showThird();
-  } else if (slideNumber === 2) {
-    showFirst();
+  if (slideNumber === 0) {
+    showSlide(2);
+  } else if (slideNumber === 1) {
+    showSlide(0);
   } else {
-    showSecond();
-  }
-}
+    showSlide(1);
+  };
+};
 
 function slideRight() {
-  if (slideNumber === 3) {
-    showFirst();
-  } else if (slideNumber === 2){
-    showThird();
+  if (slideNumber === 2) {
+    showSlide(0);
+  } else if (slideNumber === 1){
+    showSlide(2);
   } else {
-    showSecond();
+    showSlide(1);
   }
-}
-
-btnRight.addEventListener("click", slideRight);
-btnLeft.addEventListener("click", slideLeft);
+};
