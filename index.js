@@ -1,5 +1,6 @@
 
 const image = document.getElementById('img');
+const m_image = document.getElementById("m_img");
 const link = document.querySelectorAll('.navigation__link');
 const dot = document.querySelectorAll('.arrows__dot');
 const text = document.querySelectorAll('.details__text');
@@ -45,6 +46,7 @@ function changeActiveLink (index) {
 
 function showSlide(index) {
   image.src = data[index].img;
+  m_image.src = data[index].img;
   text[0].innerHTML = data[index].city;
   text[1].innerHTML = data[index].time;
   text[2].innerHTML = data[index].area;
